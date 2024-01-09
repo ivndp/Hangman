@@ -1,2 +1,11 @@
-Just a simply word guessing game - Hangman!
-a little game created by python
+
+# Hangman
+
+A classic minigame of guessing words.
+
+
+
+## Coding
+
+- [@ivndp](https://www.github.com/octokatherine)
+
