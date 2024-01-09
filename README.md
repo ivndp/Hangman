@@ -7,5 +7,5 @@ A classic minigame of guessing words.
 
 ## Coding
 
-- [@ivndp](https://www.github.com/octokatherine)
+- [@ivndp](https://www.github.com/ivndp)
 
