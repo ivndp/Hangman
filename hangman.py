@@ -6,25 +6,25 @@ with open("words.txt", "r") as file:
         word_list.append(line.strip().lower())
 
 # List of Hang Man arts
-man = ["   _ _ _ _ _\n   |\n   |\n   |\n   |\n   |\n   |\n  /|\\\n / | \\\n/  \
+man = ["   _________\n   |\n   |\n   |\n   |\n   |\n   |\n  /|\\\n / | \\\n/  \
 |  \\\n",
-"   _ _ _ _ _\n   |       |\n   |\n   |\n   |\n   |\n   |\n  /|\\\n / | \\\n/ \
+"   _________\n   |       |\n   |\n   |\n   |\n   |\n   |\n  /|\\\n / | \\\n/ \
  |  \\\n",
-"   _ _ _ _ _\n   |       |\n   |       |\n   |\n   |\n   |\n   |\n  /|\\\n / \
+"   _________\n   |       |\n   |       |\n   |\n   |\n   |\n   |\n  /|\\\n / \
 | \\\n/  |  \\\n",
-"   _ _ _ _ _\n   |       |\n   |       |\n   |       O\n   |\n   |\n   |\n  /\
+"   _________\n   |       |\n   |       |\n   |       O\n   |\n   |\n   |\n  /\
 |\\\n / | \\\n/  |  \\\n",
-"   _ _ _ _ _\n   |       |\n   |       |\n   |       O\n   |      /\n   |\n  \
+"   _________\n   |       |\n   |       |\n   |       O\n   |      /\n   |\n  \
  |\n  /|\\\n / | \\\n/  |  \\\n",
-"   _ _ _ _ _\n   |       |\n   |       |\n   |       O\n   |      / \\\n   |\
+"   _________\n   |       |\n   |       |\n   |       O\n   |      / \\\n   |\
 \n   |\n  /|\\\n / | \\\n/  |  \\\n",
-"   _ _ _ _ _\n   |       |\n   |       |\n   |       O\n   |      /|\\\n   |\
+"   _________\n   |       |\n   |       |\n   |       O\n   |      /|\\\n   |\
 \n   |\n  /|\\\n / | \\\n/  |  \\\n",
-"   _ _ _ _ _\n   |       |\n   |       |\n   |       O\n   |      /|\\\n   | \
+"   _________\n   |       |\n   |       |\n   |       O\n   |      /|\\\n   | \
       |\n   |\n  /|\\\n / | \\\n/  |  \\\n",
-"   _ _ _ _ _\n   |       |\n   |       |\n   |       O\n   |      /|\\\n   | \
+"   _________\n   |       |\n   |       |\n   |       O\n   |      /|\\\n   | \
       |\n   |      /\n  /|\\\n / | \\\n/  |  \\\n",
-"   _ _ _ _ _\n   |       |\n   |       |\n   |       O\n   |      /|\\\n   | \
+"   _________\n   |       |\n   |       |\n   |       O\n   |      /|\\\n   | \
       |\n   |      / \\\n  /|\\\n / | \\\n/  |  \\\n"]
 
 # Hang Man main function
@@ -66,7 +66,7 @@ letter.\n")
                 print(f"Yay! The answer is {answer.capitalize()}! Well done!\
 \n")
                 # Ask if the user want to play again
-                try_again = input("Want to try another game? (Y or N)").lower
+                try_again = input("Want to try another game? (Y or N) ").lower
                 if try_again == "yes" or try_again == "y":
                     hangman()
                 else:
@@ -86,7 +86,7 @@ letter.\n")
     # End of while loop means out of trials, print out game over message
     print(f"Sorry, you have used up all the trials.\nThe answer is \
 {answer.capitalize()}\nGood luck next time.\n")
-    try_again = input("Want to try another game? (Y or N)").lower
+    try_again = input("Want to try another game? (Y or N) ").lower
     if try_again == "yes" or try_again == "y":
         hangman()
     else:
